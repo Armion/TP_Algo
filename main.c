@@ -20,16 +20,13 @@
 int main()
 {
 
-    //commentaire pour Corentin lolilol
+
     Matrice A, B, X;
     int a = 0 ;
     srand(time(NULL));
 
-    //fjfrjjeijseksfjksejisejfiojiosefjifseojiofsefeijossdfijosjfiojisofejsiofsjfeiojisefojfseiojsiefojifseojsifeojiofsejifseooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-    //jiefozzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzdsjieozjzioejifzojezifofejizojzifeofjeizojfieofjeiojfiezojfeiejfizofejizoejfiojefiojefiojfeioeifjozefjiefozjfezjfozejfozejfoziejfozejfozjfzoejfzoiejfzioejfzeifjzeijfizejfozejfizeojfziejfojezifoejidojdsklsdkljjjjjjjjjjjjjjjjjjjjjjjjjj
-
     chargerMatrice(&A, "A");
-    //chargerMatrice(&B, "B");
+    chargerMatrice(&B, "B");
     gauss(&A, &B, &X);
     afficherMatrice(&X);
 
