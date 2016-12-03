@@ -5,13 +5,13 @@
 1480766602 c:\users\armion\tp_algo\iterative.h
 	"matrice.h"
 
-1480775230 c:\users\armion\tp_algo\matrice.h
+1480778310 c:\users\armion\tp_algo\matrice.h
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	<math.h>
 
-1480777135 source:c:\users\armion\tp_algo\main.c
+1480779112 source:c:\users\armion\tp_algo\main.c
 	"matrice.h"
 	"systeme_directe.h"
 	"iterative.h"
@@ -23,12 +23,14 @@
 1480775051 c:\users\armion\tp_algo\puissance.h
 	"matrice.h"
 
-1480776808 source:c:\users\armion\tp_algo\matrice.c
+1480778874 source:c:\users\armion\tp_algo\matrice.c
 	"matrice.h"
 
-1480777037 source:c:\users\armion\tp_algo\puissance.c
+1480778914 source:c:\users\armion\tp_algo\puissance.c
 	"puissance.h"
 
 1480766602 source:c:\users\armion\tp_algo\systeme_directe.c
 	"systeme_directe.h"
+
+1480778830 source:c:\users\armion\tp_algo\leverrier.c
 

@@ -3,7 +3,6 @@
 
 void methodepuissance(Matrice *A)
 {
-	int i;
 	Matrice *X1 = NULL;
 	Matrice *X2 = NULL;
     creerMatrice(X1,1, A->hauteur);
@@ -19,6 +18,7 @@ void methodepuissance(Matrice *A)
 }
 
 
+/*
 int compare(Matrice*A, Matrice*B)
 {
     int i, j;
@@ -39,3 +39,4 @@ int compare(Matrice*A, Matrice*B)
     else
         return 0;
 }
+*/

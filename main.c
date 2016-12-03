@@ -22,11 +22,13 @@ int main()
 
     Matrice A, B;
     int a = 0 ;
+    double e;
     srand(time(NULL));
 
     chargerMatrice(&A, "A");
     puissanceMatrice(&A,&B, 5);
     afficherMatrice(&B);
+    printf("%f", e);
 
 
 
