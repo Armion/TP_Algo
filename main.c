@@ -8,8 +8,6 @@
  */
 
 
-//zqserdtfyugiop
-
 
 #include "matrice.h"
 #include "echantillon.h"
