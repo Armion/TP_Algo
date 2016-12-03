@@ -1,7 +1,6 @@
 #include "puissance.h"
 
 
-/*
 void methodepuissance(Matrice *A)
 {
 	int i;
@@ -10,17 +9,16 @@ void methodepuissance(Matrice *A)
     creerMatrice(X1,1, A->hauteur);
     creerMatrice(X2,1, A->hauteur);
     fillMatrice(X1,1);
-    do {
+    //do {
         copierMatrice(*X2,X1);
         produitMatrices(*A,*X1,X2);
 
-    } while(!(compare(X1,X2)));
+    //} while(!(compare(X1,X2)));
 
 
 }
-*/
 
-/*
+
 int compare(Matrice*A, Matrice*B)
 {
     int i, j;
@@ -40,38 +38,4 @@ int compare(Matrice*A, Matrice*B)
     }
     else
         return 0;
-<<<<<<< Updated upstream:puissance.c
-}*/
-=======
 }
-
-
-int traceMatrice(matrice*A,int n)
-{
-    int i, trace = 0;
-    for (i=0; i<n; i++)
-    {
-        trace += (*A)[i][i];
-    }
-    return trace;
-}
-int Leverrier(matrice*A, int n)
-{
-    matrice*B NULL;
-    creerMatrice(*B,n,n);
-    int tab[2][n];
-    int i;
-    int k;
-    int resultat;
-    for(i=0;i<n:i++)
-    {
-        puissance(&A, &B, n);
-        tab[1][n] = traceMatrice(&B,n);
-        tab[2][n] = tab[1][n]
-        for(k=0; k<i-1; k++)
-        {
-
-        }
-    }
-}
->>>>>>> Stashed changes:TP4.c
