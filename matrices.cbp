@@ -36,6 +36,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="iterative.h" />
+		<Unit filename="leverrier.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="leverrier.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
