@@ -25,9 +25,8 @@ int main()
     srand(time(NULL));
 
     chargerMatrice(&A, "A");
-    chargerMatrice(&B, "B");
-    gauss(&A, &B, &X);
-    afficherMatrice(&X);
+    puissanceMatrice(&A,&B, 5);
+    afficherMatrice(&B);
 
 
 
@@ -38,7 +37,6 @@ int main()
 
     libererMatrice(&A);
     libererMatrice(&B);
-    libererMatrice(&X);
 
     scanf("%d", &a);
 

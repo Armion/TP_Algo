@@ -555,3 +555,31 @@ void fillMatrice(Matrice* matrice, double nombre)
     }
 
 }
+
+
+int puissanceMatrice(Matrice *A, Matrice *B, int puissance)
+{
+    if(puissance > 0)
+    {
+        int i =1;
+        Matrice copie;
+
+        copierMatrice(*A, &copie);
+        copierMatrice(*A, B);
+        for(i = 1; i < puissance; i++)
+        {
+            produitMatrices(*B, copie, B);
+
+        }
+
+        return 1;
+
+
+    }
+    else
+    {
+        return 0;
+    }
+
+
+}

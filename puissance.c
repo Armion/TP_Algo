@@ -1,23 +1,28 @@
 #include "puissance.h"
 
 
-void methodepuissance( matrice *A, int n){
+/*
+void methodepuissance(Matrice *A)
+{
 	int i;
-	matrice*X1 = NULL;
-	matrice*X2 = NULL;
-    creerMatrice(X1,n,1);
-    creerMatrice(X2,n,1);
+	Matrice *X1 = NULL;
+	Matrice *X2 = NULL;
+    creerMatrice(X1,1, A->hauteur);
+    creerMatrice(X2,1, A->hauteur);
     fillMatrice(X1,1);
     do {
-        copierMatrice(X2,X1);
-        produitMatrice(&A,X1,X2);
-    } while(not(compare(X1,X2)));
+        copierMatrice(*X2,X1);
+        produitMatrices(*A,*X1,X2);
+
+    } while(!(compare(X1,X2)));
 
 
-  }
 }
+*/
 
-int compare(matrice*A,matrice*B){
+/*
+int compare(Matrice*A, Matrice*B)
+{
     int i, j;
     if((A->hauteur == B->hauteur) && (A->largeur == B->largeur))
     {
@@ -35,4 +40,4 @@ int compare(matrice*A,matrice*B){
     }
     else
         return 0;
-}
+}*/

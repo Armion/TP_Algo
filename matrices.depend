@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1480766602 source:c:\users\armion\tp_algo\iterative.c
+	"iterative.h"
+
+1480766602 c:\users\armion\tp_algo\iterative.h
+	"matrice.h"
+
+1480775230 c:\users\armion\tp_algo\matrice.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<math.h>
+
+1480776773 source:c:\users\armion\tp_algo\main.c
+	"matrice.h"
+	"systeme_directe.h"
+	"iterative.h"
+	"puissance.h"
+
+1480766602 c:\users\armion\tp_algo\systeme_directe.h
+	"matrice.h"
+
+1480775051 c:\users\armion\tp_algo\puissance.h
+	"matrice.h"
+
+1480776458 source:c:\users\armion\tp_algo\matrice.c
+	"matrice.h"
+
+1480775818 source:c:\users\armion\tp_algo\puissance.c
+	"puissance.h"
+
+1480766602 source:c:\users\armion\tp_algo\systeme_directe.c
+	"systeme_directe.h"
+
