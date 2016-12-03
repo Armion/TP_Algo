@@ -20,7 +20,7 @@ int main()
 {
 
 
-    Matrice A, B, X;
+    Matrice A, B;
     int a = 0 ;
     srand(time(NULL));
 
