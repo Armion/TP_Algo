@@ -36,6 +36,7 @@ int sauvegarderMatrice(const Matrice * const matrice, char* lien); // fonction q
 void initialiserMatrice(Matrice* matrice); //fonction qui met tous les indices de la matrice a 0
 void definirMatrice(Matrice* matrice); //fonction pas tres utile qui permet de creer une matrice sur la console, plus pratique de passer par une sauvegarde
 void fillMatrice(Matrice* matrice, double nombre); // fonction qui remplie une matrice avec un meme nombre
+void getElem(Matrice *A, int colonne, int ligne, double *element);
 
 
 //calculs
