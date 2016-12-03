@@ -11,7 +11,7 @@
 	<time.h>
 	<math.h>
 
-1480779112 source:c:\users\armion\tp_algo\main.c
+1480780637 source:c:\users\armion\tp_algo\main.c
 	"matrice.h"
 	"systeme_directe.h"
 	"iterative.h"
@@ -23,18 +23,21 @@
 1480775051 c:\users\armion\tp_algo\puissance.h
 	"matrice.h"
 
-1480778874 source:c:\users\armion\tp_algo\matrice.c
+1480779802 source:c:\users\armion\tp_algo\matrice.c
 	"matrice.h"
 
-1480778914 source:c:\users\armion\tp_algo\puissance.c
+1480780754 source:c:\users\armion\tp_algo\puissance.c
 	"puissance.h"
+	"math.h"
 
 1480766602 source:c:\users\armion\tp_algo\systeme_directe.c
 	"systeme_directe.h"
 
-<<<<<<< Updated upstream
-1480778830 source:c:\users\armion\tp_algo\leverrier.c
-=======
+1480766602 ated upstream
+
+1480779428 source:c:\users\armion\tp_algo\leverrier.c
+	"matrice.h"
+
 1480770676 source:c:\users\corentin\tp_algo\iterative.c
 	"iterative.h"
 
@@ -67,5 +70,6 @@
 
 1480779101 source:c:\users\corentin\tp_algo\leverrier.c
 	"matrice.h"
->>>>>>> Stashed changes
+
+1480779101 shed changes
 

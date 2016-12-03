@@ -1,4 +1,5 @@
 #include "puissance.h"
+#include "math.h"
 
 
 void methodepuissance(Matrice *A)
@@ -18,17 +19,20 @@ void methodepuissance(Matrice *A)
 }
 
 
-/*
+
 int compare(Matrice*A, Matrice*B)
 {
-    int i, j;
+
     if((A->hauteur == B->hauteur) && (A->largeur == B->largeur))
     {
-        for(i=0, i<hauteur, i++)
+        int i, j;
+
+        for(i=0; i< A->hauteur; i++)
         {
-            for(j=0,j<largeur,j++)
+            for(j=0;j< A->largeur;j++)
             {
-                if(((*A)[i][j]-(*B)[i][j])>Epsilon)
+
+                if((fabs(A->matrice[j][i] - B->matrice[j][i])) > 0.5)
                 {
                     return 0;
                 }
@@ -39,4 +43,4 @@ int compare(Matrice*A, Matrice*B)
     else
         return 0;
 }
-*/
+
