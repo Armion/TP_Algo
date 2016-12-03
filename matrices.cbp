@@ -32,10 +32,6 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="echantillon.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="echantillon.h" />
 		<Unit filename="iterative.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -47,6 +43,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="matrice.h" />
+		<Unit filename="puissance.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="puissance.h" />
 		<Unit filename="systeme_directe.c">
 			<Option compilerVar="CC" />
 		</Unit>
