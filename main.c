@@ -25,7 +25,8 @@ int main()
     int a = 0 ;
     srand(time(NULL));
 
-
+    //fjfrjjeijseksfjksejisejfiojiosefjifseojiofsefeijossdfijosjfiojisofejsiofsjfeiojisefojfseiojsiefojifseojsifeojiofsejifseooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+    //jiefozzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzdsjieozjzioejifzojezifofejizojzifeofjeizojfieofjeiojfiezojfeiejfizofejizoejfiojefiojefiojfeioeifjozefjiefozjfezjfozejfozejfoziejfozejfozjfzoejfzoiejfzioejfzeifjzeijfizejfozejfizeojfziejfojezifoejidojdsklsdkljjjjjjjjjjjjjjjjjjjjjjjjjj
 
     chargerMatrice(&A, "A");
     chargerMatrice(&B, "B");
