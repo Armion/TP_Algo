@@ -587,6 +587,6 @@ int puissanceMatrice(Matrice *A, Matrice *B, int puissance)
 void getElem(Matrice *A, int colonne, int ligne, double *element)
 {
 
-    *element = A->matrice[ligne][colonne];
+    *element = A->matrice[ligne-1][colonne-1];
 
 }
