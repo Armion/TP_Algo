@@ -51,10 +51,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="systeme_directe.h" />
-		<Unit filename="test.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="test.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
