@@ -32,5 +32,40 @@
 1480766602 source:c:\users\armion\tp_algo\systeme_directe.c
 	"systeme_directe.h"
 
+<<<<<<< Updated upstream
 1480778830 source:c:\users\armion\tp_algo\leverrier.c
+=======
+1480770676 source:c:\users\corentin\tp_algo\iterative.c
+	"iterative.h"
+
+1480770676 c:\users\corentin\tp_algo\iterative.h
+	"matrice.h"
+
+1480778532 c:\users\corentin\tp_algo\matrice.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<math.h>
+
+1480777430 source:c:\users\corentin\tp_algo\main.c
+	"matrice.h"
+	"systeme_directe.h"
+	"iterative.h"
+	"puissance.h"
+
+1480770676 c:\users\corentin\tp_algo\systeme_directe.h
+	"matrice.h"
+
+1480777430 c:\users\corentin\tp_algo\puissance.h
+	"matrice.h"
+
+1480777837 source:c:\users\corentin\tp_algo\puissance.c
+	"puissance.h"
+
+1480770676 source:c:\users\corentin\tp_algo\systeme_directe.c
+	"systeme_directe.h"
+
+1480779101 source:c:\users\corentin\tp_algo\leverrier.c
+	"matrice.h"
+>>>>>>> Stashed changes
 
