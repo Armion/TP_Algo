@@ -10,10 +10,9 @@
 
 
 #include "matrice.h"
-#include "echantillon.h"
 #include "systeme_directe.h"
 #include "iterative.h"
-#include "test.h"
+#include "puissance.h"
 
 
 

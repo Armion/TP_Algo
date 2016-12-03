@@ -1,3 +1,6 @@
+#include "puissance.h"
+
+
 void methodepuissance( matrice *A, int n){
 	int i;
 	matrice*X1 = NULL;
