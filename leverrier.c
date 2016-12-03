@@ -18,11 +18,12 @@ int Leverrier(matrice*A, int n)
     for(i=0;i<n:i++)
     {
         puissance(&A, &B, n);
-        tab[1][n] = traceMatrice(&B,n);
-        tab[2][n] = tab[1][n]
+        tab[1][i] = traceMatrice(&B,n);
+        tab[2][i] = tab[1][i];
         for(k=0; k<i-1; k++)
         {
-
+            tab[2][i] -= tab[1][k]*tab[2][i-1-k];
         }
+
     }
 }
