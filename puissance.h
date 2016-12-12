@@ -3,7 +3,7 @@
 
 #include "matrice.h"
 
-void methodepuissance(Matrice *A);
+void methodepuissance(Matrice *A, Matrice *X, double precision);
 void diviseComposante(Matrice *V);
 
 

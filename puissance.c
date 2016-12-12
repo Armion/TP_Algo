@@ -2,19 +2,30 @@
 #include "math.h"
 
 
-void methodepuissance(Matrice *A)
+void methodepuissance(Matrice *A, Matrice *X, double precision)
 {
-	Matrice *X1 = NULL;
 	Matrice *X2 = NULL;
-    creerMatrice(X1,1, A->hauteur);
+	X2 = malloc(sizeof(Matrice));
+    creerMatrice(X,1, A->hauteur);
     creerMatrice(X2,1, A->hauteur);
-    fillMatrice(X1,1);
-    do {
-        copierMatrice(*X2,X1);
-        produitMatrices(*A,*X1,X2);
 
-      } while(!(compare(X1,X2, 0.2)));
+    fillMatrice(X2,1);
+    do
+    {
+        copierMatrice(*X2,X);
+        produitMatrices(*A,*X,X2);
 
+        diviseComposante(X2);
+
+
+      } while(!(compare(X,X2, precision)));
+
+
+
+    copierMatrice(*X2, X);
+
+
+    libererMatrice(X2);
 
 }
 
