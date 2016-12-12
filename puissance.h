@@ -9,7 +9,7 @@ void diviseComposante(Matrice *V);
 
 
 
-int compare(Matrice *A, Matrice *B);
+int compare(Matrice *A, Matrice *B, double precision);
 
 
 

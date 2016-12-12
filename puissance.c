@@ -9,18 +9,18 @@ void methodepuissance(Matrice *A)
     creerMatrice(X1,1, A->hauteur);
     creerMatrice(X2,1, A->hauteur);
     fillMatrice(X1,1);
-    //do {
+    do {
         copierMatrice(*X2,X1);
         produitMatrices(*A,*X1,X2);
 
-    //} while(!(compare(X1,X2)));
+      } while(!(compare(X1,X2, 0.2)));
 
 
 }
 
 
 
-int compare(Matrice*A, Matrice*B)
+int compare(Matrice*A, Matrice*B, double precision)
 {
 
     if((A->hauteur == B->hauteur) && (A->largeur == B->largeur))
@@ -32,7 +32,7 @@ int compare(Matrice*A, Matrice*B)
             for(j=0;j< A->largeur;j++)
             {
 
-                if((fabs(A->matrice[j][i] - B->matrice[j][i])) > 0.5)
+                if((fabs(A->matrice[j][i] - B->matrice[j][i])) > precision)
                 {
                     return 0;
                 }
