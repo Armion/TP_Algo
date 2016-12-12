@@ -19,6 +19,18 @@ void methodepuissance(Matrice *A)
 }
 
 
+void diviseComposante(Matrice *V)
+{
+    int i =0;
+
+    for(i =0; i < V->hauteur; i++)
+    {
+        V->matrice[0][i] = V->matrice[0][i] / V->matrice[0][V->hauteur-1];
+    }
+
+}
+
+
 
 int compare(Matrice*A, Matrice*B, double precision)
 {
