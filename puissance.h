@@ -5,6 +5,7 @@
 
 void methodepuissance(Matrice *A, Matrice *X, double precision);
 void diviseComposante(Matrice *V);
+double quotientRayleigh(Matrice *A, Matrice *V);
 
 
 

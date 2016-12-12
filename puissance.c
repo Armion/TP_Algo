@@ -67,3 +67,33 @@ int compare(Matrice*A, Matrice*B, double precision)
         return 0;
 }
 
+double quotientRayleigh(Matrice *A, Matrice *V)
+{
+    Matrice *temp;
+    temp = malloc(sizeof(Matrice));
+    double resultat ;
+
+    produitMatrices(*A,*V, temp);
+    produitMatrices(transposeMatrice(*V), *temp, temp);
+
+    resultat = temp->matrice[0][0];
+
+     produitMatrices(transposeMatrice(*V), *V, temp);
+
+     if(temp->matrice[0][0] != 0)
+     {
+         resultat /= temp->matrice[0][0];
+     }
+     else
+     {
+         printf(" \n division par 0, impossible de calculer la plus grande valeur propre ! \n");
+     }
+
+
+
+
+
+    libererMatrice(temp);
+
+    return resultat;
+}
