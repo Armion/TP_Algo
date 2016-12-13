@@ -9,23 +9,41 @@ int traceMatrice(Matrice*A,int n)
     }
     return trace;
 }
-int Leverrier(Matrice*A, int n)
+void Leverrier(Matrice*A, int n)
 {
-    Matrice*B = NULL;
-    creerMatrice(B,n,n);
-    int tab[2][n];
+    Matrice B;
+    creerMatrice(&B,n,n);
+    int tab[2][n+1];
     int i;
     int k;
-    int resultat;
-    for(i=0;i<n;i++)
+    for(i=0;i<n+1;i++)
     {
-        puissanceMatrice(&A, &B, n);
+        puissanceMatrice(&A, &B, i);
         tab[1][i] = traceMatrice(&B,n);
-        tab[2][i] = tab[1][i];
-        for(k=0; k<i-1; k++)
+        if (i==0)
         {
-            tab[2][i] -= tab[1][k]*tab[2][i-1-k];
+            if (n % 2 == 0)
+            {
+                tab[2][i] = 1;
+            }
+            else
+            {
+               tab[2][i] = -1;
+            }
         }
 
+        else
+        {
+            tab[2][i] = 0;
+            for(k=0; k<i; k++)
+            {
+                tab[2][i] -= tab[2][k]*tab[1][i-k];
+            }
+            tab[2][i] = (tab[2][i])/i;
+        }
+    }
+    for(i=0;i<n+1;i++)
+    {
+        printf("%d Lambda^%d +",tab[2][i],n-i);
     }
 }
