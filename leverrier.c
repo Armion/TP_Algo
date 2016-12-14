@@ -53,7 +53,18 @@ void Leverrier(Matrice*A)
     }
     printf("\n \n");
 }
-/*
+
+
+double traceMatrice2(Matrice*A)
+{
+    int i;
+    double trace = 0;
+    for (i=0; i<A->hauteur; i++)
+    {
+        trace += A->matrice[i][i];
+    }
+    return trace;
+}
 void LeverrierAmelioree(Matrice *A)
 {
     Matrice B;
@@ -68,7 +79,7 @@ void LeverrierAmelioree(Matrice *A)
     {
         I.matrice[i][i] = 1;
     }
-    int tab[A->hauteur+1];
+    double tab[A->hauteur+1];
     for(i=0;i<=A->hauteur;i++)
     {
         if (i==0)
@@ -84,7 +95,7 @@ void LeverrierAmelioree(Matrice *A)
         }
         else
         {
-            tab[i] = ((-tab[0])/(i+1))* traceMatrice(A);
+            tab[i] = ((-tab[0])/(i+1))* traceMatrice2(A);
             produitMatriceScalaire(I,tab[i],&C);
             soustractionMatrice((*A),C,&B);
             produitMatrices((*A),B,A);
@@ -94,11 +105,11 @@ void LeverrierAmelioree(Matrice *A)
     for(i=0;i<A->hauteur+1;i++)
     {
         if (i == 0 || tab[i]<0)
-            printf("%d Lambda^%d",tab[i],A->hauteur-i);
+            printf("%f Lambda^%d",tab[i],A->hauteur-i);
         else if (tab[i]>=0)
-            printf(" + %d Lambda^%d",tab[i],A->hauteur-i);
+            printf(" + %f Lambda^%d",tab[i],A->hauteur-i);
     }
     printf("\n \n");
 
 }
-*/
+
