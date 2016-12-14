@@ -10,8 +10,9 @@
 #ifndef LEVERRIER
 #define LEVERRIER
 
-int traceMatrice(Matrice*A,int n);
-void Leverrier(Matrice*A, int n);
+int traceMatrice(Matrice*A);
+void Leverrier(Matrice*A);
+void LeverrierAmelioree(Matrice *A);
 
 
 #endif

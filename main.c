@@ -13,6 +13,7 @@
 #include "systeme_directe.h"
 #include "iterative.h"
 #include "puissance.h"
+#include "leverrier.h"
 
 
 
@@ -25,10 +26,16 @@ int main()
     double e;
     srand(time(NULL));
 
+
     chargerMatrice(&A, "A");
+    Leverrier(&A);
     puissanceMatrice(&A,&B, 5);
     afficherMatrice(&B);
     printf("%f", e);
+
+
+
+
 
 
 
