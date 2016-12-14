@@ -1,28 +1,29 @@
 #include "matrice.h"
 
-int traceMatrice(Matrice*A,int n)
+int traceMatrice(Matrice*A)
 {
-    int i, trace = 0;
-    for (i=0; i<n; i++)
+    int i;
+    int trace = 0;
+    for (i=0; i<A->hauteur; i++)
     {
         trace += A->matrice[i][i];
     }
     return trace;
 }
-void Leverrier(Matrice*A, int n)
+void Leverrier(Matrice*A)
 {
     Matrice B;
-    creerMatrice(&B,n,n);
-    int tab[2][n+1];
+    creerMatrice(&B,A->hauteur,A->largeur);
+    int tab[2][A->hauteur+1];
     int i;
     int k;
-    for(i=0;i<n+1;i++)
+    for(i=0;i<A->hauteur+1;i++)
     {
-        puissanceMatrice(&A, &B, i);
-        tab[1][i] = traceMatrice(&B,n);
+        puissanceMatrice(A, &B, i);
+        tab[1][i] = traceMatrice(&B);
         if (i==0)
         {
-            if (n % 2 == 0)
+            if (A->hauteur % 2 == 0)
             {
                 tab[2][i] = 1;
             }
@@ -42,8 +43,62 @@ void Leverrier(Matrice*A, int n)
             tab[2][i] = (tab[2][i])/i;
         }
     }
-    for(i=0;i<n+1;i++)
+    printf("Le polynome caracteristique de la matrice est : P(Lambda)=  \n");
+    for(i=0;i<A->hauteur+1;i++)
     {
-        printf("%d Lambda^%d +",tab[2][i],n-i);
+        if (i == 0 || tab[2][i]<0)
+            printf("%d Lambda^%d",tab[2][i],A->hauteur-i);
+        else if (tab[2][i]>=0)
+            printf(" + %d Lambda^%d",tab[2][i],A->hauteur-i);
     }
+    printf("\n \n");
 }
+/*
+void LeverrierAmelioree(Matrice *A)
+{
+    Matrice B;
+    Matrice I;
+    Matrice C;
+    int i;
+    creerMatrice(&B,A->hauteur,A->largeur);
+    creerMatrice(&I,A->hauteur,A->largeur);
+    creerMatrice(&C,A->hauteur,A->largeur);
+    initialiserMatrice(&I);
+    for(i=0; i<A->hauteur;i++)
+    {
+        I.matrice[i][i] = 1;
+    }
+    int tab[A->hauteur+1];
+    for(i=0;i<=A->hauteur;i++)
+    {
+        if (i==0)
+        {
+            if (A->hauteur % 2 == 0)
+            {
+                tab[i] = 1;
+            }
+            else
+            {
+               tab[i] = -1;
+            }
+        }
+        else
+        {
+            tab[i] = ((-tab[0])/(i+1))* traceMatrice(A);
+            produitMatriceScalaire(I,tab[i],&C);
+            soustractionMatrice((*A),C,&B);
+            produitMatrices((*A),B,A);
+        }
+    }
+    printf("Le polynome caracteristique de la matrice est : P(Lambda)=  \n");
+    for(i=0;i<A->hauteur+1;i++)
+    {
+        if (i == 0 || tab[i]<0)
+            printf("%d Lambda^%d",tab[i],A->hauteur-i);
+        else if (tab[i]>=0)
+            printf(" + %d Lambda^%d",tab[i],A->hauteur-i);
+    }
+    printf("\n \n");
+
+}
+*/
