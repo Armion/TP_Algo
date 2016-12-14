@@ -1,9 +1,10 @@
 #include "matrice.h"
 
-int traceMatrice(Matrice*A)
+double traceMatrice(Matrice*A)
 {
     int i;
-    int trace = 0;
+    double trace = 0;
+
     for (i=0; i<A->hauteur; i++)
     {
         trace += A->matrice[i][i];
@@ -53,52 +54,66 @@ void Leverrier(Matrice*A)
     }
     printf("\n \n");
 }
-/*
+
+
 void LeverrierAmelioree(Matrice *A)
 {
     Matrice B;
     Matrice I;
     Matrice C;
-    int i;
+    Matrice D;
+
+    int i,p;
+    double tab[A->hauteur+1];
+
+
     creerMatrice(&B,A->hauteur,A->largeur);
     creerMatrice(&I,A->hauteur,A->largeur);
     creerMatrice(&C,A->hauteur,A->largeur);
     initialiserMatrice(&I);
-    for(i=0; i<A->hauteur;i++)
+    copierMatrice(*A, &D);
+
+
+    for(i=0; i< A->hauteur ; i++)
     {
         I.matrice[i][i] = 1;
     }
-    int tab[A->hauteur+1];
-    for(i=0;i<=A->hauteur;i++)
+
+    if (A->hauteur % 2 == 0)
+        {
+            tab[0] = 1;
+        }
+    else
+        {
+            tab[0] = -1;
+        }
+
+
+    p = tab[0]*(-1);
+
+
+
+    for(i = 1; i <= A->hauteur;i++)
     {
-        if (i==0)
-        {
-            if (A->hauteur % 2 == 0)
-            {
-                tab[i] = 1;
-            }
-            else
-            {
-               tab[i] = -1;
-            }
-        }
-        else
-        {
-            tab[i] = ((-tab[0])/(i+1))* traceMatrice(A);
-            produitMatriceScalaire(I,tab[i],&C);
-            soustractionMatrice((*A),C,&B);
-            produitMatrices((*A),B,A);
-        }
+            tab[i] = p * traceMatrice(A) / i;
+            produitMatriceScalaire(I,tab[i]*p,&C);
+            soustractionMatrice(*A,C,&B);
+            produitMatrices(D,B,A);
+
+
     }
+
+
+
     printf("Le polynome caracteristique de la matrice est : P(Lambda)=  \n");
+
     for(i=0;i<A->hauteur+1;i++)
     {
         if (i == 0 || tab[i]<0)
-            printf("%d Lambda^%d",tab[i],A->hauteur-i);
+            printf("%f Lambda^%d",tab[i],A->hauteur-i);
         else if (tab[i]>=0)
-            printf(" + %d Lambda^%d",tab[i],A->hauteur-i);
+            printf(" + %f Lambda^%d",tab[i],A->hauteur-i);
     }
     printf("\n \n");
 
 }
-*/

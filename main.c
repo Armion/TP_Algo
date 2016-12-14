@@ -28,9 +28,7 @@ int main()
 
 
     chargerMatrice(&A, "A");
-    Leverrier(&A);
-    puissanceMatrice(&A,&B, 5);
-    afficherMatrice(&B);
+    LeverrierAmelioree(&A);
     printf("%f", e);
 
 
@@ -45,7 +43,7 @@ int main()
 
 
     libererMatrice(&A);
-    libererMatrice(&B);
+    //libererMatrice(&B);
 
     scanf("%d", &a);
 
