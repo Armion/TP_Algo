@@ -590,3 +590,15 @@ void getElem(Matrice *A, int colonne, int ligne, double *element)
     *element = A->matrice[ligne-1][colonne-1];
 
 }
+
+double traceMatrice(Matrice*A)
+{
+    int i;
+    double trace = 0;
+
+    for (i=0; i<A->hauteur; i++)
+    {
+        trace += A->matrice[i][i];
+    }
+    return trace;
+}

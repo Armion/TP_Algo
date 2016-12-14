@@ -2,6 +2,7 @@
 #define PUISSANCE
 
 #include "matrice.h"
+#include "math.h"
 
 void methodepuissance(Matrice *A, Matrice *X, double precision);
 void diviseComposante(Matrice *V);

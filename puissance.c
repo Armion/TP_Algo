@@ -1,5 +1,5 @@
 #include "puissance.h"
-#include "math.h"
+
 
 
 void methodepuissance(Matrice *A, Matrice *X, double precision)

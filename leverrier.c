@@ -1,16 +1,6 @@
 #include "matrice.h"
 
-double traceMatrice(Matrice*A)
-{
-    int i;
-    double trace = 0;
 
-    for (i=0; i<A->hauteur; i++)
-    {
-        trace += A->matrice[i][i];
-    }
-    return trace;
-}
 void Leverrier(Matrice*A)
 {
     Matrice B;
@@ -53,6 +43,8 @@ void Leverrier(Matrice*A)
             printf(" + %d Lambda^%d",tab[2][i],A->hauteur-i);
     }
     printf("\n \n");
+
+    libererMatrice(&B);
 }
 
 
@@ -116,4 +108,7 @@ void LeverrierAmelioree(Matrice *A)
     }
     printf("\n \n");
 
+    libererMatrice(&B);
+    libererMatrice(&C);
+    libererMatrice(&D);
 }
