@@ -22,14 +22,13 @@ int main()
 
 
     Matrice A, B;
-    int a = 0 ;
-    double e;
+    int a = 0;
     srand(time(NULL));
 
 
     chargerMatrice(&A, "A");
-    LeverrierAmelioree(&A);
-    printf("%f", e);
+    methodepuissance(&A,&B, 0.002);
+    afficherMatrice(&B);
 
 
 
@@ -43,7 +42,7 @@ int main()
 
 
     libererMatrice(&A);
-    //libererMatrice(&B);
+    libererMatrice(&B);
 
     scanf("%d", &a);
 

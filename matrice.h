@@ -48,6 +48,7 @@ int soustractionMatrice(Matrice m1, Matrice m2, Matrice* resultat); // fpnction 
 Matrice transposeMatrice(Matrice m1); // fonction qui retourne la transposé d'une matrice
 void copierMatrice(const Matrice origine, Matrice* copie); // fonction qui copie une matrice origine dans la matrice resultat
 double normeVecteur(Matrice V); //calcule la norme d'un vecteur
+double traceMatrice(Matrice*A);
 
 
 

@@ -10,7 +10,6 @@
 #ifndef LEVERRIER
 #define LEVERRIER
 
-int traceMatrice(Matrice*A);
 void Leverrier(Matrice*A);
 void LeverrierAmelioree(Matrice *A);
 
