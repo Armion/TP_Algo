@@ -10,10 +10,9 @@
 
 
 #include "matrice.h"
-#include "systeme_directe.h"
-#include "iterative.h"
 #include "puissance.h"
 #include "leverrier.h"
+#include "interface.h"
 
 
 
@@ -21,14 +20,9 @@ int main()
 {
 
 
-    Matrice A, B;
-    int a = 0;
     srand(time(NULL));
 
-
-    chargerMatrice(&A, "A");
-    methodepuissance(&A,&B, 0.002);
-    afficherMatrice(&B);
+    principal();
 
 
 
@@ -36,15 +30,6 @@ int main()
 
 
 
-
-
-
-
-
-    libererMatrice(&A);
-    libererMatrice(&B);
-
-    scanf("%d", &a);
 
     return 0;
 }
