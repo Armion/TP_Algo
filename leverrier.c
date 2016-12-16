@@ -1,6 +1,20 @@
+/**
+ * \file leverrier.c
+ * \brief contient les fonctions de leverrier et leverrier amelioré
+ * \author Palisson Corentin
+ * \version 0.9
+ * \date 21 Octobre 2016
+ *
+ */
+
 #include "matrice.h"
 
-
+/**
+ * \fn void Leverrier(Matrice*A)
+ * \brief Fonction pour calculer le polynome caracteristique
+ *
+ * \param Matrice *A matrice dont on veut calculer le polynome caracterique
+ */
 void Leverrier(Matrice*A)
 {
     Matrice B;
@@ -48,6 +62,12 @@ void Leverrier(Matrice*A)
 }
 
 
+/**
+ * \fn void LeverrierAmelioree(Matrice *A)
+ * \brief Fonction pour calculer le polynome caracteristique mais plus rapide que leverrier classique
+ *
+ * \param Matrice *A matrice dont on veut calculer le polynome caracterique
+ */
 void LeverrierAmelioree(Matrice *A)
 {
     Matrice B;

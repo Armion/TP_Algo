@@ -1,0 +1,5 @@
+<map id="main.c" name="main.c">
+<area shape="rect" id="node2" href="$matrice_8h.html" title="contient les prototypes des fonctions essentielles pour implementer les matrices et la structure Matr..." alt="" coords="163,155,239,181"/>
+<area shape="rect" id="node9" href="$puissance_8h.html" title="contient juste les prototypes des fonctions pour calculer le vecteur des valeur propres et la plus gr..." alt="" coords="283,80,375,107"/>
+<area shape="rect" id="node10" href="$leverrier_8h.html" title="contient les prototypes qui servent à implémenter la méthode de Leverrier " alt="" coords="399,80,477,107"/>
+</map>

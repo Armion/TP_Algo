@@ -1,0 +1,5 @@
+<map id="chargerMatrice" name="chargerMatrice">
+<area shape="rect" id="node2" href="$matrice_8c.html#add75b5e19533ffc62ffe5d9f0e367f76" title="fonction qui permet d&#39;afficher une matrice, le changement de ligne est exprime par || ..." alt="" coords="161,5,268,32"/>
+<area shape="rect" id="node3" href="$matrice_8c.html#a4ae739338b9165d05214f8ce5793c3f7" title="Fonction pour creer une matrice et l&#39;initialiser a 0. " alt="" coords="167,56,262,83"/>
+<area shape="rect" id="node4" href="$matrice_8c.html#a19340f9f2f5e6d1d6e04bd1eced33743" title="fonction qui met met 0 dans tout les elements d&#39;une matrice " alt="" coords="316,56,432,83"/>
+</map>
