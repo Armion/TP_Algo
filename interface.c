@@ -41,12 +41,11 @@ void principal()
         {
             printf(" \n veuillez entrer le chemin relatif vers le fichier de la matrice \n");
             scanf("%s", fichier);
-
-            chargerMatrice(&A, fichier);
-
-
-            switch (choix)
+        //on verifi qu'on a bien chargé la matrice
+            if(chargerMatrice(&A, fichier) == 1)
             {
+                switch (choix)
+                {
                 case 1:
 
                     printf("veuillez entrer la precision \n");
@@ -72,6 +71,7 @@ void principal()
                 case 4:
                     LeverrierAmelioree(&A);
                 break;
+                }
             }
 
 

@@ -32,10 +32,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="iterative.c">
+		<Unit filename="interface.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="iterative.h" />
+		<Unit filename="interface.h" />
 		<Unit filename="leverrier.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -51,10 +51,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="puissance.h" />
-		<Unit filename="systeme_directe.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="systeme_directe.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
