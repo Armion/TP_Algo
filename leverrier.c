@@ -94,10 +94,10 @@ void LeverrierAmelioree(Matrice *A)
     copierMatrice(*A, &D);
 
     /* On déclare 4 matrices et on leurs alloue la mémoire
-     Dans A, il y aura la matrice A indexée selon le niveau de résolution
+     Dans A il y aura la matrice donnée en paramettre du début à la fin
      Dans B, il y a la matrice B indexée selon le niveau de résolution définie dans l'algorithme
      Dans C, on met la matrice -a(i)*(-1)^(n+1)*I, elle sert donc de matrice temporaire
-     Dans D, on garde la matrice de départ qui sert à la définition de A
+     Dans D, il y aura la matrice A indéxée selon le niveau de résolution.
     */
 
 
@@ -125,10 +125,10 @@ void LeverrierAmelioree(Matrice *A)
 
     for(i = 1; i <= A->hauteur;i++) //ici on a l'algorithme donné:
     {
-            tab[i] = p * traceMatrice(A) / i;
+            tab[i] = p * traceMatrice(&D) / i;
             produitMatriceScalaire(I,tab[i]*p,&C);
-            soustractionMatrice(*A,C,&B);
-            produitMatrices(D,B,A);
+            soustractionMatrice(D,C,&B);
+            produitMatrices(*A,B,&D);
 
 
     }
