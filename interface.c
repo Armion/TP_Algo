@@ -18,7 +18,7 @@ void principal()
 {
 
     char fichier[50];
-    int choix = 0, points = 0, i, j;
+    int choix = 0;
     Matrice A, X;
     double precision;
 
