@@ -1,0 +1,6 @@
+<map id="produitMatrices" name="produitMatrices">
+<area shape="rect" id="node2" href="$leverrier_8h.html#ab93a64eedf20a2d5db4aa858f157042f" title="Fonction pour calculer le polynome caracteristique mais plus rapide que leverrier classique..." alt="" coords="164,5,292,32"/>
+<area shape="rect" id="node3" href="$matrice_8h.html#afc0f0ea7993e044ff1af8e0d99d15476" title="Fonction pour calculer une matrice eleve à une puissance. " alt="" coords="166,56,290,83"/>
+<area shape="rect" id="node5" href="$puissance_8h.html#a6daa211b3ce8f12564077b149cee7a14" title="Fonction pour calculer les valeurs propres par la methode des puissances. " alt="" coords="169,107,287,133"/>
+<area shape="rect" id="node4" href="$leverrier_8h.html#a69449e41d7910e2abd395c9226a8ba5c" title="Fonction pour calculer le polynome caracteristique. " alt="" coords="340,56,411,83"/>
+</map>

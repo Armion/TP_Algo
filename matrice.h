@@ -2,7 +2,7 @@
  * \file matrice.h
  * \brief contient les prototypes des fonctions essentielles pour implementer les matrices et la structure Matrice
  * \author Cochard Mathieu
- * \version 1.5
+ * \version 1.8
  * \date 21 Octobre 2016
  *
  */
@@ -48,7 +48,8 @@ int soustractionMatrice(Matrice m1, Matrice m2, Matrice* resultat); // fpnction 
 Matrice transposeMatrice(Matrice m1); // fonction qui retourne la transposé d'une matrice
 void copierMatrice(const Matrice origine, Matrice* copie); // fonction qui copie une matrice origine dans la matrice resultat
 double normeVecteur(Matrice V); //calcule la norme d'un vecteur
-double traceMatrice(Matrice*A);
+double traceMatrice(Matrice*A); // permet de calculer la trace d'une matrice
+int compare(Matrice *A, Matrice *B, double precision); //de type int pour faire des test booleen
 
 
 

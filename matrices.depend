@@ -5,37 +5,38 @@
 1480766602 c:\users\armion\tp_algo\iterative.h
 	"matrice.h"
 
-1480778310 c:\users\armion\tp_algo\matrice.h
+1481751311 c:\users\armion\tp_algo\matrice.h
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	<math.h>
 
-1480780637 source:c:\users\armion\tp_algo\main.c
+1481751382 source:c:\users\armion\tp_algo\main.c
 	"matrice.h"
 	"systeme_directe.h"
 	"iterative.h"
 	"puissance.h"
+	"leverrier.h"
 
 1480766602 c:\users\armion\tp_algo\systeme_directe.h
 	"matrice.h"
 
-1480775051 c:\users\armion\tp_algo\puissance.h
+1481751345 c:\users\armion\tp_algo\puissance.h
 	"matrice.h"
-
-1480779802 source:c:\users\armion\tp_algo\matrice.c
-	"matrice.h"
-
-1480780754 source:c:\users\armion\tp_algo\puissance.c
-	"puissance.h"
 	"math.h"
+
+1481751299 source:c:\users\armion\tp_algo\matrice.c
+	"matrice.h"
+
+1481751347 source:c:\users\armion\tp_algo\puissance.c
+	"puissance.h"
 
 1480766602 source:c:\users\armion\tp_algo\systeme_directe.c
 	"systeme_directe.h"
 
 1480766602 ated upstream
 
-1480779428 source:c:\users\armion\tp_algo\leverrier.c
+1481751293 source:c:\users\armion\tp_algo\leverrier.c
 	"matrice.h"
 
 1480770676 source:c:\users\corentin\tp_algo\iterative.c
@@ -72,4 +73,6 @@
 	"matrice.h"
 
 1480779101 shed changes
+
+1481751322 c:\users\armion\tp_algo\leverrier.h
 

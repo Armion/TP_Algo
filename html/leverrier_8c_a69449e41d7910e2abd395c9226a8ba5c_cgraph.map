@@ -1,0 +1,9 @@
+<map id="Leverrier" name="Leverrier">
+<area shape="rect" id="node2" href="$matrice_8c.html#a4ae739338b9165d05214f8ce5793c3f7" title="Fonction pour creer une matrice et l&#39;initialiser a 0. " alt="" coords="455,55,549,82"/>
+<area shape="rect" id="node4" href="$matrice_8c.html#aff6bb2bddf0fa1246fbc6e10922a1e26" title="Fonction qui desalou les tableaux qui ont etes alloues dynamiquement d&#39;une matrice. " alt="" coords="136,30,236,57"/>
+<area shape="rect" id="node5" href="$matrice_8c.html#afc0f0ea7993e044ff1af8e0d99d15476" title="Fonction pour calculer une matrice eleve à une puissance. " alt="" coords="124,81,248,107"/>
+<area shape="rect" id="node8" href="$matrice_8c.html#adde9cff3a12c9e141e5fd6da52a1ceae" title="Fonction qui calcule la trace d&#39;une matrice. " alt="" coords="139,131,233,158"/>
+<area shape="rect" id="node3" href="$matrice_8c.html#a19340f9f2f5e6d1d6e04bd1eced33743" title="fonction qui met met 0 dans tout les elements d&#39;une matrice " alt="" coords="597,55,713,82"/>
+<area shape="rect" id="node6" href="$matrice_8c.html#a924e3c504833eae5cc84974de455d8f9" title="fonction qui permet de multiplier une matrice par un scalaire " alt="" coords="301,81,401,107"/>
+<area shape="rect" id="node7" href="$matrice_8c.html#a1b85e491e135452e423bdb7ae53d21b9" title="fonction qui permet de multiplier deux matrices " alt="" coords="296,131,407,158"/>
+</map>

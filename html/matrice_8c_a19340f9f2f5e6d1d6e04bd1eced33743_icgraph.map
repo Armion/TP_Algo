@@ -1,0 +1,16 @@
+<map id="initialiserMatrice" name="initialiserMatrice">
+<area shape="rect" id="node2" href="$leverrier_8h.html#ab93a64eedf20a2d5db4aa858f157042f" title="Fonction pour calculer le polynome caracteristique mais plus rapide que leverrier classique..." alt="" coords="511,253,639,280"/>
+<area shape="rect" id="node3" href="$matrice_8h.html#a4ae739338b9165d05214f8ce5793c3f7" title="Fonction pour creer une matrice et l&#39;initialiser a 0. " alt="" coords="169,279,264,305"/>
+<area shape="rect" id="node4" href="$leverrier_8h.html#a69449e41d7910e2abd395c9226a8ba5c" title="Fonction pour calculer le polynome caracteristique. " alt="" coords="687,481,757,508"/>
+<area shape="rect" id="node5" href="$matrice_8h.html#aa59badc0986457acb46e5e7dd6f60d39" title="fonction qui permet de charger une matrice à partir d&#39;un fichier " alt="" coords="333,583,441,609"/>
+<area shape="rect" id="node6" href="$matrice_8h.html#a659683da739189da26693541431601ce" title="fonction qui calcule la somme de deux matrices " alt="" coords="332,76,443,103"/>
+<area shape="rect" id="node7" href="$matrice_8h.html#a5389f8fd8cae10a9e2fd11f98915682b" title="fonction qui met met 0 dans tout les elements d&#39;une matrice " alt="" coords="338,127,437,153"/>
+<area shape="rect" id="node8" href="$matrice_8h.html#a1b85e491e135452e423bdb7ae53d21b9" title="fonction qui permet de multiplier deux matrices " alt="" coords="332,431,443,457"/>
+<area shape="rect" id="node9" href="$matrice_8h.html#afc0f0ea7993e044ff1af8e0d99d15476" title="Fonction pour calculer une matrice eleve à une puissance. " alt="" coords="513,405,637,432"/>
+<area shape="rect" id="node11" href="$matrice_8h.html#a580106f5e44c095b4b39d3474298119d" title="fonction qui permet de multiplier une matrice par un scalaire " alt="" coords="312,228,463,255"/>
+<area shape="rect" id="node12" href="$matrice_8h.html#ac7c9ae4fa153da7fdfb47b181f34102c" title="fonction qui permet de multiplier une matrice par un scalaire " alt="" coords="326,481,449,508"/>
+<area shape="rect" id="node13" href="$matrice_8h.html#a924e3c504833eae5cc84974de455d8f9" title="fonction qui permet de multiplier une matrice par un scalaire " alt="" coords="337,329,437,356"/>
+<area shape="rect" id="node14" href="$matrice_8h.html#a53a9ce9706fe102b6efded7794d1cdca" title="fonction qui calcule la soustraction entre deux matrices " alt="" coords="319,279,455,305"/>
+<area shape="rect" id="node15" href="$puissance_8h.html#a87208bf47238d46c63a5ad65572b1ace" title="Fonction pour calculer les valeurs propres par la methode des puissances. " alt="" coords="322,177,453,204"/>
+<area shape="rect" id="node10" href="$puissance_8h.html#a6daa211b3ce8f12564077b149cee7a14" title="Fonction pour calculer les valeurs propres par la methode des puissances. " alt="" coords="515,481,634,508"/>
+</map>

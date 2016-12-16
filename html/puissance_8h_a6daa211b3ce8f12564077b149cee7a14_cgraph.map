@@ -1,0 +1,7 @@
+<map id="quotientRayleigh" name="quotientRayleigh">
+<area shape="rect" id="node2" href="$matrice_8c.html#aff6bb2bddf0fa1246fbc6e10922a1e26" title="Fonction qui desalou les tableaux qui ont etes alloues dynamiquement d&#39;une matrice. " alt="" coords="183,5,283,32"/>
+<area shape="rect" id="node3" href="$matrice_8c.html#a1b85e491e135452e423bdb7ae53d21b9" title="fonction qui permet de multiplier deux matrices " alt="" coords="178,56,289,83"/>
+<area shape="rect" id="node6" href="$matrice_8c.html#ac7c9ae4fa153da7fdfb47b181f34102c" title="fonction qui permet de multiplier une matrice par un scalaire " alt="" coords="172,107,295,133"/>
+<area shape="rect" id="node4" href="$matrice_8c.html#a4ae739338b9165d05214f8ce5793c3f7" title="Fonction pour creer une matrice et l&#39;initialiser a 0. " alt="" coords="343,81,437,108"/>
+<area shape="rect" id="node5" href="$matrice_8c.html#a19340f9f2f5e6d1d6e04bd1eced33743" title="fonction qui met met 0 dans tout les elements d&#39;une matrice " alt="" coords="485,81,601,108"/>
+</map>

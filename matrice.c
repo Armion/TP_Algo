@@ -1,7 +1,8 @@
 /**
  * \file matrice.c
  * \brief contient les  fonctions de base pour implementer les matrices
- * \version 1.5
+ * \author Cochard Mathieu
+ * \version 1.8
  * \date 21 Octobre 2016
  *
  */
@@ -75,7 +76,7 @@ void libererMatrice(Matrice* matrice)
 
 /**
  * \fn int chargerMatrice(Matrice* matrice, char* lien)
- * \brief fonction qui permet de charger une matrice a partir d'un fichier
+ * \brief fonction qui permet de charger une matrice à partir d'un fichier
  *
  * \param matrice pointeur sur matrice, qui est la matrice ou sera stocke la matrice chargee
  * \param lien est un tableau de char, une chaine de caractere qui contient le lien vers le fichier matrice a charger, peut'etre dans un sous dossier par exemple matrices/A pour la matrice A du dossier matrices
@@ -546,6 +547,7 @@ void fillMatrice(Matrice* matrice, double nombre)
 {
     int i = 0, j = 0;
 
+    //on parcourt la matrice pour remplire celle-ci avec la valeur nombre
     for (i = 0; i < matrice->largeur; i++)
     {
         for(j = 0; j < matrice->hauteur; j++)
@@ -557,8 +559,18 @@ void fillMatrice(Matrice* matrice, double nombre)
 }
 
 
+/**
+ * \fn int puissanceMatrice(Matrice *A, Matrice *B, int puissance)
+ * \brief Fonction pour calculer une matrice eleve à une puissance
+ *
+ * \param A matrice dont on veut calculer la puissance
+ * \param B la matrice qui contiendra A^puissance
+ * \param puissance la puissance à laquel on veut mettre A
+ * \return retourne un bool egal à 0 si on a tenté de rentrer une puissance negatif
+ */
 int puissanceMatrice(Matrice *A, Matrice *B, int puissance)
 {
+
     if(puissance > 0)
     {
         int i =1;
@@ -566,6 +578,8 @@ int puissanceMatrice(Matrice *A, Matrice *B, int puissance)
 
         copierMatrice(*A, &copie);
         copierMatrice(*A, B);
+
+        //boucle pour multiplier puissances fois la matrice
         for(i = 1; i < puissance; i++)
         {
             produitMatrices(*B, copie, B);
@@ -576,6 +590,12 @@ int puissanceMatrice(Matrice *A, Matrice *B, int puissance)
 
 
     }
+    //pour la puissance 0 on met la matrice identité d'ordre 1
+    else if(puissance == 0)
+    {
+        creerMatrice(B, 1, 1);
+        B->matrice[0][0] = 1;
+    }
     else
     {
         return 0;
@@ -584,21 +604,74 @@ int puissanceMatrice(Matrice *A, Matrice *B, int puissance)
 
 }
 
+/**
+ * \fn void getElem(Matrice *A, int colonne, int ligne, double *element)
+ * \brief Fonction pour avoir l'element d'une matrice sans se soucier du fait que les indices soient inversés et commencent à 0, les arguments sont dans l'ordre conventionnel mathématique
+ *
+ * \param A matrice dont on veut obtenir l'element
+ * \param colonne la colonne dont on veut l'element
+ * \param ligne la ligne don on veut l'element
+ * \param element un pointeur sur un double pour pouvoir récuperer l'element, j'aimes pas typer mes fonctions
+ */
 void getElem(Matrice *A, int colonne, int ligne, double *element)
 {
-
+    //on se contente mettre le bonne element
     *element = A->matrice[ligne-1][colonne-1];
 
 }
 
+
+/**
+ * \fn double traceMatrice(Matrice*A)
+ * \brief Fonction qui calcule la trace d'une matrice
+ *
+ * \param A matrice dont on veut calculer la trace
+ * \return retourne la trace dans un double
+ */
 double traceMatrice(Matrice*A)
 {
     int i;
     double trace = 0;
 
+    //on parcour la diagonal pour ajouter l'element à la somme
     for (i=0; i<A->hauteur; i++)
     {
         trace += A->matrice[i][i];
     }
     return trace;
+}
+
+
+/**
+ * \fn int compare(Matrice*A, Matrice*B, double precision)
+ * \brief Fonction pour comparer deux matrices
+ *
+ * \param Matrice *A matrice A à comparer
+ * \param Matrice *B à comparer
+ * \param double precision la marge d'erreure toléré pour la comparaison
+ * \return renvoit un entier pour faire des test booleens
+ */
+int compare(Matrice*A, Matrice*B, double precision)
+{
+    //on commence par verifier que les matrices ont les meme dimensions
+    if((A->hauteur == B->hauteur) && (A->largeur == B->largeur))
+    {
+        int i, j;
+
+        //et dans ce cas on parcour tout les elements des matrices pour calculer la difference de leur valeur absolue qui doit'etre inferieure à la marge d'erreure
+        for(i=0; i< A->hauteur; i++)
+        {
+            for(j=0;j< A->largeur;j++)
+            {
+                //c'est brutal, mais si on trouve deux elements dont la difference est trop elevé on intéromp la fonction pour renvoyer 0 et eviter de parcourir le reste des matrices
+                if((fabs(A->matrice[j][i] - B->matrice[j][i])) > precision)
+                {
+                    return 0;
+                }
+            }
+        }
+        return 1;
+    }
+    else
+        return 0;
 }
